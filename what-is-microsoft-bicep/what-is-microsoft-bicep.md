@@ -1,14 +1,9 @@
-## What is Microsoft Bicep?
+# What is Microsoft Bicep?
 
 Microsoft has been developing and building a "new" domain-specific language (DSL) for deploying resources in Azure. In other words, Microsoft Bicep is a new Infrastructure-as-Code (IaC) language for deploying, deleting, updating, and keeping the infrastructure in source control using nothing but code.
 
 We will take a look at what Microsoft Bicep is, why use it, and a hands-on lab guide. Let's get going!
 
-
-
-## Table of contents
-
-[TOC]
 
 ## Video
 
