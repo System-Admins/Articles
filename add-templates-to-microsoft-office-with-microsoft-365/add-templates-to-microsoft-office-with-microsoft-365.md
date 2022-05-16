@@ -33,7 +33,7 @@ Before we can proceed, please read the requirements:
 
 ## Goal and technology
 
-As I mentioned at the start the end goal is to achieve that Microsoft Office automatically pulls templates from Microsoft 365 without any application packages (Intune/Endpoint Manager/SCCM) and policies. Here is a visual overview of the solution:
+As I mentioned at the start the end goal is to make Microsoft Office automatically pull templates from Microsoft 365 without any application packages (Intune/Endpoint Manager/SCCM) and policies. Here is a visual overview of the solution:
 
 ![solution flow](media/template-flow.png)
 
@@ -89,7 +89,7 @@ We are going to use the SharePoint Online PowerShell module for some parts of th
 
 When the Microsoft Office application(s) fetches the templates from SharePoint it will do so in a user context. Because of that, we need to make sure that the users can read the assets on the SharePoint site. In this example, we will be using the built-in SharePoint Online group "everyone except external users".
 
-Please make sure that you are connected to SharePoint through PowerShell shown in the above section.
+Please make sure that you are connected to SharePoint through PowerShell shown in the section above.
 
 1. Open a PowerShell terminal and executed the following.
 
@@ -151,7 +151,7 @@ In the previous section, we created a document library on the SharePoint Online 
 
 ### Uploading the templates to the document library
 
-Now the hard part is over, now we need to upload the Microsoft Office templates to the asset library.
+Now the hard part is over, the remaining task is to upload the Microsoft Office templates to the asset library.
 
 1. Open a browser and navigate to "**https://<tenant>.sharepoint.com/<sites or teams>/<site>/<document library>**".
 
@@ -173,7 +173,7 @@ Now the hard part is over, now we need to upload the Microsoft Office templates 
 
 ## The results
 
-When all the configuration is done, it's now time to view the results of the "hard" labor. Please notice it may take <u>up to 24 hours</u> before the templates are visible in the Microsoft Office applications (Excel, Word, and PowerPoint).
+When all the configuration is done, it's now time to view the result. Please notice it may take <u>up to 24 hours</u> before the templates are visible in the Microsoft Office applications (Excel, Word, and PowerPoint).
 
 1. Open one of the applications, in this example, we are using Microsoft Word.
 
